@@ -1,0 +1,21 @@
+﻿<Window x:Name="CountDownW" x:Class="Reminder.CountDownWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reminder"
+        mc:Ignorable="d"
+        Title="CountDownWindow" Height="80" Width="220" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Color="#FF49E42A" Opacity="0.5"/>
+    </Window.Background>
+    <Grid x:Name="CountDownGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="WorkingL" Content="Pay attention to your sitting style!" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="TimerLabel" Content="49 : 59" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Foreground="White"/>
+
+    </Grid>
+</Window>

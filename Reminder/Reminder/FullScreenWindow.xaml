@@ -1,0 +1,36 @@
+﻿<Window x:Name="FullScreenW" x:Class="Reminder.FullScreenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reminder"
+        mc:Ignorable="d"
+        Title="FullScreenWindow" Height="900" Width="1600" WindowStyle="None" WindowState="Maximized" ShowInTaskbar="False" ResizeMode="NoResize" Topmost="True" AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Color="#FF62D616" Opacity="0.5"/>
+    </Window.Background>
+    <Grid x:Name="FullScreenGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="CenterGrid" Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="RestingL" Content="Do something like workout for resting!" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+            <Label x:Name="TimerLabel" Content="09 : 59" Grid.Row="2" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>
