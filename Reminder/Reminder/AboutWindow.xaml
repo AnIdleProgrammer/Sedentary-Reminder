@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Reminder"
         mc:Ignorable="d"
-        Title="About Reminder!" Height="220" Width="350" WindowStartupLocation="CenterScreen">
+        Title="About Reminder!" Height="220" Width="440" WindowStartupLocation="CenterScreen">
     <Window.DataContext>
         <local:GlobalVariable/>
     </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="18*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -25,8 +25,8 @@
         </Grid.RowDefinitions>
         <Label Content="{Binding AppName}" FontSize="14" VerticalContentAlignment="Center" Grid.Column="1" HorizontalContentAlignment="Left" Grid.Row="1"/>
         <Label Grid.Column="1" Content="{Binding SoftwareIncName}" Grid.Row="2" VerticalContentAlignment="Center" FontSize="14"/>
-        <Label Grid.Column="1" Content="Version 0.1" Grid.Row="3" VerticalContentAlignment="Center" FontSize="14"/>
-        <Label Content="https:" Grid.Row="4" FontSize="14" VerticalContentAlignment="Center" Margin="0,0,0,1" Grid.Column="1" HorizontalContentAlignment="Left"/>
+        <Label Grid.Column="1" Content="{Binding SoftwareVersion}" Grid.Row="3" VerticalContentAlignment="Center" FontSize="14"/>
+        <Label Content="{Binding GithubLink}" Grid.Row="4" FontSize="14" VerticalContentAlignment="Center" Margin="0,0,0,1" Grid.Column="1" HorizontalContentAlignment="Left"/>
 
     </Grid>
 </Window>

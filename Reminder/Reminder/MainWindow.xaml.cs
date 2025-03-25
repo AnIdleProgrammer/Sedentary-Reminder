@@ -156,6 +156,7 @@ namespace Reminder
                 _gVars.WorkingTime = _gVars.WorkingTime < 0 ? 50 : _gVars.WorkingTime;
                 _gVars.RestingTime = _gVars.RestingTime < 0 ? 10 : _gVars.RestingTime;
                 _gVars.Autostartup = _gVars.Autostartup < 1 ? 0 : 1;
+                _gVars.Autostartup = Check_AutoStartUp() ? 1 : 0;
             }
             fs.Close();
         }
@@ -254,6 +255,14 @@ namespace Reminder
                     System.Windows.Controls.ContentControl contentControl = (System.Windows.Controls.ContentControl)w.FindName(cName);
                     contentControl.Content = content;
                 }
+            }
+        }
+
+        private bool Check_AutoStartUp()
+        {
+            using (RegistryKey? key = Registry.CurrentUser.OpenSubKey(_gVars.RegStartAtWindowStart, true))
+            {
+                return Convert.ToString($"{key?.GetValue(_gVars.SoftwareIncName)}") == $"{Environment.ProcessPath}";
             }
         }
 
