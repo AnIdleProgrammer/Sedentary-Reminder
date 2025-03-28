@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Reminder"
         mc:Ignorable="d"
         Title="CountDownWindow" Height="80" Width="220" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" AllowsTransparency="True">
+    <Window.DataContext>
+        <local:GlobalVariable/>
+    </Window.DataContext>
     <Window.Background>
         <SolidColorBrush Color="#FF49E42A" Opacity="0.5"/>
     </Window.Background>
@@ -14,7 +17,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label x:Name="WorkingL" Content="Pay attention to your sitting style!" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="WorkingL" Content="{Binding Lan.SittingStyleMessage}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
         <Label x:Name="TimerLabel" Content="49 : 59" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Foreground="White"/>
 
     </Grid>

@@ -26,7 +26,7 @@ namespace Reminder
             if (locale.Contains(Culture.ZH))
             {
                 // read the language string from files!
-                LAN.translate(_lan, new LAN(["计时器:", "工作时间:", "休息时间:", "(分钟)", "选项:", "开机自启!", "开始", "停止", "让眼睛休息一下!放松一下!", "注意坐姿", "主界面", "关于", "退出"]));
+                LAN.translate(_lan, new LAN(["计时器:", "工作时间:", "休息时间:", "(分钟)", "选项:", "开机自启!", "开始", "停止", "让眼睛休息一下!放松一下!", "注意坐姿", "主界面", "关于", "退出", "休息的时候活动一下！", "注意坐姿！"]));
             }
         }
         public static class Culture
@@ -57,24 +57,28 @@ namespace Reminder
             private String preference = "Preference";
             private String about = "About";
             private String exit = "Exit";
+            private String restingReminderMessage = "Do something like workout for resting!";
+            private String sittingStyleMessage = "Pay attention to your sitting style!";
 
             public LAN() { }
 
             public LAN(String[] texts)
             {
-                this.Timer = texts[0];
-                this.Working_time = texts[1];
-                this.Resting_time = texts[2];
-                this.Minutes = texts[3];
-                this.Options = texts[4];
-                this.Auto_startup = texts[5];
-                this.Start = texts[6];
-                this.Stop = texts[7];
-                this.Resting = texts[8];
-                this.Working = texts[9];
-                this.Preference = texts[10];
-                this.About = texts[11];
-                this.Exit = texts[12];
+                Timer = texts[0];
+                Working_time = texts[1];
+                Resting_time = texts[2];
+                Minutes = texts[3];
+                Options = texts[4];
+                Auto_startup = texts[5];
+                Start = texts[6];
+                Stop = texts[7];
+                Resting = texts[8];
+                Working = texts[9];
+                Preference = texts[10];
+                About = texts[11];
+                Exit = texts[12];
+                RestingReminderMessage = texts[13];
+                SittingStyleMessage = texts[14];
             }
 
             public static void translate(LAN lan1, LAN lan2)
@@ -92,6 +96,8 @@ namespace Reminder
                 lan1.preference = lan2.preference;
                 lan1.about = lan2.about;
                 lan1.exit = lan2.exit;
+                lan1.restingReminderMessage = lan2.restingReminderMessage;
+                lan1.sittingStyleMessage = lan2.sittingStyleMessage;
             }
 
             public string Timer { get => timer; set => timer = value; }
@@ -109,6 +115,8 @@ namespace Reminder
             public string Exit { get => exit; set => exit = value; }
             public string Working_time_50 { get => working_time_50; set => working_time_50 = value; }
             public string Resting_time_10 { get => resting_time_10; set => resting_time_10 = value; }
+            public string RestingReminderMessage { get => restingReminderMessage; set => restingReminderMessage = value; }
+            public string SittingStyleMessage { get => sittingStyleMessage; set => sittingStyleMessage = value; }
         }
 
         public String RegStartAtWindowStart

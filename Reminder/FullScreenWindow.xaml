@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Reminder"
         mc:Ignorable="d"
         Title="FullScreenWindow" Height="900" Width="1600" WindowStyle="None" WindowState="Maximized" ShowInTaskbar="False" ResizeMode="NoResize" Topmost="True" AllowsTransparency="True">
+    <Window.DataContext>
+        <local:GlobalVariable/>
+    </Window.DataContext>
     <Window.Background>
         <SolidColorBrush Color="#FF62D616" Opacity="0.5"/>
     </Window.Background>
@@ -29,7 +32,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Label x:Name="RestingL" Content="Do something like workout for resting!" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+            <Label x:Name="RestingL" Content="{Binding Lan.RestingReminderMessage}" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
             <Label x:Name="TimerLabel" Content="09 : 59" Grid.Row="2" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
         </Grid>
     </Grid>
