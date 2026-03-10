@@ -1,3 +1,3 @@
 Pure DotNet Framework 8.0
 
-Better for white collar!
+Better for Freelance developer, work at home!
