@@ -7,31 +7,31 @@ https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.26/windowsdesktop-
 Better for Freelance developer, work at home!
 
 
-主界面：
+main ui：
 
 <img src="screenshots/main.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-点击开始：
+click start button：
 
 <img src=screenshots/"start.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-点击停止：
+click stop button：
 
 <img src="screenshots/stop.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-右下角任务栏图标右键：
+the icon in the right bottom of the taskbar：
 
 <img src="screenshots/taskbar.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-弹出菜单：
+right click and the popup menu showed：
 
 <img src="screenshots/popup.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-运行界面：
+after click the start button：
 
 <img src="screenshots/running.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-休息界面：
+rest ui：
 
 <img src="screenshots/rest.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
