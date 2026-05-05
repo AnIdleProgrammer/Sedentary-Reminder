@@ -23,7 +23,7 @@ the icon in the right bottom of the taskbar：
 
 <img src="screenshots/taskbar.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
-right click and the popup menu showed：
+right click the icon and the popup menu showed：
 
 <img src="screenshots/popup.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
