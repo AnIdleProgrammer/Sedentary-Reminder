@@ -17,7 +17,7 @@ click start button：
 
 click stop button：
 
-<img src="screenshots/stop_1.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
+<img src="screenshots/stop.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
 the icon in the right bottom of the taskbar：
 
