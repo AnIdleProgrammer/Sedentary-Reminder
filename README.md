@@ -13,7 +13,7 @@ main ui：
 
 click start button：
 
-<img src=screenshots/"start.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
+<img src="screenshots/start.png" height=250 alt="Screenshot showing the Sedentary-Reminder running.">
 
 click stop button：
 
